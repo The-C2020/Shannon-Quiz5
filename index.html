@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div class="sortContainer">
+      <p class="head-text">
+        Sortiere die folgenden Challenges nach ihrer Verletzungsgefahr. Die
+        Gefährlichste kommt nach oben, die Harmloseste nach unten. <br />
+        Wie ist die richtige Reihenfolge? Sortiere die Bausteine von
+        <br /><strong>oben = gefährlich</strong> nach <br /><strong
+          >unten = harmlos.</strong
+        >
+      </p>
+      <div class="sortBy" id="upper">Gefährlich</div>
+      <div class="sortables">
+        <div
+          data-order="5"
+          draggable="true"
+          class="sortables-option highlighted draggable"
+        >
+          Chubby-Bunny-Challenge
+        </div>
+        <div
+          data-order="3"
+          draggable="true"
+          class="sortables-option highlighted draggable"
+        >
+          rotes Licht, grünes Licht
+        </div>
+        <div
+          data-order="2"
+          draggable="true"
+          class="sortables-option highlighted draggable"
+        >
+          Milk-Crate-Challenge
+        </div>
+        <div
+          data-order="6"
+          draggable="true"
+          class="sortables-option highlighted draggable"
+        >
+          Aushalten: Nicht Lachen
+        </div>
+        <div
+          data-order="1"
+          draggable="true"
+          class="sortables-option highlighted draggable"
+        >
+          Bird-Box-Challenge
+        </div>
+        <div
+          data-order="4"
+          draggable="true"
+          class="sortables-option highlighted draggable"
+        >
+          Pizza-Challenge
+        </div>
+      </div>
+      <div class="sortBy" id="lower">Harmlos</div>
+      <button class="btn check-btn" type="button">Prüfen</button>
+      <div class="popup" id="popup">
+        <div class="popup_content">
+          <button id="close">&times;</button>
+          <div class="sort-box__correct hidden">
+            &#10004; Richtig! Sehr gut.
+          </div>
+          <div class="sort-box__wrong">
+            &#x2717; Leider Falsch! Probiere einmal eine andere Reihenfolge.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
